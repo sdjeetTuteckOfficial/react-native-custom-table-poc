@@ -80,7 +80,9 @@ const Table = () => {
           renderItem={renderItem}
           keyExtractor={(item, index) => index.toString()}
           scrollEnabled={true}
-          contentContainerStyle={styles.listContent} // Ensure the list content has proper styling
+          // contentContainerStyle={styles.listContent}
+          // style={{ width: 400, height: '100%' }}
+          showsHorizontalScrollIndicator={true}
         />
       </View>
     </ScrollView>
